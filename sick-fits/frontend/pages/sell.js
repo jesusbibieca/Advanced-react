@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import CreateItem from '../components/CreateItem';
+import PleaseSignIn from '../components/PleaseSignIn';
 
-class Sell extends Component {
-  render() {
-    return (
-      <div>
-        <p>Sell component here</p>
-      </div>
-    );
-  }
-}
+const Sell = props => (
+  <div>
+    <PleaseSignIn>
+      <CreateItem />
+    </PleaseSignIn>
+  </div>
+);
 
 export default Sell;
